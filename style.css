@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: blueviolet;
+}
+
+.kotak {
+	margin: auto;
+	padding: 0;
+	display: flex;
+	grid-template-columns: repeat(8,1fr);
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	position: relative;
+	
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	grid-column: span 8;
+	margin: 10px 0;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+  
+}
+  
+.head-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+  
+.body-card {
+	padding: 10px 15px;
+}
+  
+.body-card h3 {
+	margin: 0;  
+  
+}
+
+@media screen and (min-width: 550px) {
+	.card {
+	grid-column: span 4;
+	}
+}
+  
+  
+@media screen and (min-width: 760px) {
+	.card {
+	width: 350px;
+	margin: 0 10px;
+	}
+}
+  
+@media screen and (min-width: 960px) {
+  
+}
+
+h3 {
+    color: rgb(49, 20, 155);
+    text-align: center;
+    
+}
+
+.body-card img {
+    height: 25px;
+    display: flex;
+    padding: 10px 80px;
+    align-items: center;
+}
+
+.body-card ul li {
+    padding-left: 20px;
+}
